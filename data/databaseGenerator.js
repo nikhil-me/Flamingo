@@ -19,7 +19,8 @@ var Async = require('async');
 var ProgressBar = require('progress');
 var sqlite3 = require('sqlite3').verbose();
 
-var outputFile = process.argv[2] || path.resolve(__dirname, 'norrisbot.db');
+var outputFile = process.argv[2] || path.resolve(__dirname, 'flamingo.db');
+console.log(outputFile);
 var db = new sqlite3.Database(outputFile);
 
 // executes an API request to count all the available jokes
